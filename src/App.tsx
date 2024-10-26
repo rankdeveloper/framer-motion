@@ -4,6 +4,7 @@ import LayoutGroupExample1 from "./LayoutGroup";
 import Animate_Presence_1 from "./assets/Animate_Presence_1";
 import Inview from "./ViewBased";
 import Scroll from "./Scroll";
+import AnimationControls from "./AnimationControls";
 export default function App() {
   return (
     // <div className="h-screen flex flex-col items-center justify-center bg-gray-300">
@@ -15,6 +16,7 @@ export default function App() {
     // </div>
 
     // <Inview />
-    <Scroll />
+    // <Scroll />
+    <AnimationControls />
   );
 }
