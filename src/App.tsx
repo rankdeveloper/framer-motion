@@ -3,6 +3,7 @@ import TextDown from "./TextDown";
 import LayoutGroupExample1 from "./LayoutGroup";
 import Animate_Presence_1 from "./assets/Animate_Presence_1";
 import Inview from "./ViewBased";
+import Scroll from "./Scroll";
 export default function App() {
   return (
     // <div className="h-screen flex flex-col items-center justify-center bg-gray-300">
@@ -13,6 +14,7 @@ export default function App() {
     // {/* <Inview /> */}
     // </div>
 
-    <Inview />
+    // <Inview />
+    <Scroll />
   );
 }
