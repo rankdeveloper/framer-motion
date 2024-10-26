@@ -1,14 +1,22 @@
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 export default function Scroll() {
   const { scrollYProgress } = useScroll();
+
+  const scaleX = useSpring(scrollYProgress, {
+    damping: 20,
+    stiffness: 100,
+    restSpeed: 0.1,
+    restDelta: 0.001,
+  });
 
   console.log(scrollYProgress);
   return (
     <>
       <motion.div
         style={{
-          scaleX: scrollYProgress,
+          //   scaleX: scrollYProgress,
+          scaleX,
           transformOrigin: "left",
           background: "orange",
           position: "sticky",
